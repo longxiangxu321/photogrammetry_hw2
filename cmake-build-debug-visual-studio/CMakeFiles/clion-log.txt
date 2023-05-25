@@ -1,0 +1,9 @@
+"C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2022.2.4/bin/ninja/win/ninja.exe" -G Ninja -S D:\Q4\photogrammetry\assignment2\A2_Triangulation\A2_Triangulation_Code -B D:\Q4\photogrammetry\assignment2\A2_Triangulation\A2_Triangulation_Code\cmake-build-debug-visual-studio
+-- Easy3D: I'am working on a 32-bit Windows
+-- OpenGL libraries: opengl32;glu32
+-- Using Win32 for window creation
+-- Operating system is Windows
+-- Building static libraries.
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/Q4/photogrammetry/assignment2/A2_Triangulation/A2_Triangulation_Code/cmake-build-debug-visual-studio

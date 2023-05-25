@@ -45,31 +45,6 @@ bool Triangulation::triangulation(
         Vector3D &t    /// output: 3D vector, which is the recovered translation of the 2nd camera
 ) const
 {
-    /// NOTE: there might be multiple workflows for reconstructing 3D geometry from corresponding image points.
-    ///       This assignment uses the commonly used one explained in our lecture.
-    ///       It is advised to define a function for the sub-tasks. This way you have a clean and well-structured
-    ///       implementation, which also makes testing and debugging easier. You can put your other functions above
-    ///       triangulation(), or put them in one or multiple separate files.
-
-    std::cout << "\nTODO: I am going to implement the triangulation() function in the following file:" << std::endl
-              << "\t    - triangulation_method.cpp\n\n";
-
-    std::cout << "[Liangliang]:\n"
-                 "\tFeel free to use any provided data structures and functions. For your convenience, the\n"
-                 "\tfollowing three files implement basic linear algebra data structures and operations:\n"
-                 "\t    - Triangulation/matrix.h  Matrices of arbitrary dimensions and related functions.\n"
-                 "\t    - Triangulation/vector.h  Vectors of arbitrary dimensions and related functions.\n"
-                 "\t    - Triangulation/matrix_algo.h  Determinant, inverse, SVD, linear least-squares...\n"
-                 "\tPlease refer to the above files for a complete list of useful functions and their usage.\n\n"
-                 "\tIf you choose to implement the non-linear method for triangulation (optional task). Please\n"
-                 "\trefer to 'Tutorial_NonlinearLeastSquares/main.cpp' for an example and some explanations.\n\n"
-                 "\tIn your final submission, please\n"
-                 "\t    - delete ALL unrelated test or debug code and avoid unnecessary output.\n"
-                 "\t    - include all the source code (and please do NOT modify the structure of the directories).\n"
-                 "\t    - do NOT include the 'build' directory (which contains the intermediate files in a build step).\n"
-                 "\t    - make sure your code compiles and can reproduce your results without ANY modification.\n\n" << std::flush;
-
-    /// Below are a few examples showing some useful data structures and APIs.
 
     /// define a 2D vector/point
     Vector2D b(1.1, 2.2);
@@ -103,21 +78,21 @@ bool Triangulation::triangulation(
     M.set_column(1, Vector3D(5.5, 5.5, 5.5));
 
     /// define a 15 by 9 matrix (and all elements initialized to 0.0)
-    Matrix W(15, 9, 0.0);
+    Matrix WW(15, 9, 0.0);
     /// set the first row by a 9-dimensional vector
-    W.set_row(0, {0, 1, 2, 3, 4, 5, 6, 7, 8}); // {....} is equivalent to a std::vector<double>
+    WW.set_row(0, {0, 1, 2, 3, 4, 5, 6, 7, 8}); // {....} is equivalent to a std::vector<double>
 
     /// get the number of rows.
-    int num_rows = W.rows();
+    int num_rows = WW.rows();
 
     /// get the number of columns.
-    int num_cols = W.cols();
+    int num_cols = WW.cols();
 
     /// get the the element at row 1 and column 2
-    double value = W(1, 2);
+    double value = WW(1, 2);
 
     /// get the last column of a matrix
-    Vector last_column = W.get_column(W.cols() - 1);
+    Vector last_column = WW.get_column(WW.cols() - 1);
 
     /// define a 3 by 3 identity matrix
     Matrix33 I = Matrix::identity(3, 3, 1.0);
@@ -152,5 +127,87 @@ bool Triangulation::triangulation(
     //          - function not implemented yet;
     //          - input not valid (e.g., not enough points, point numbers don't match);
     //          - encountered failure in any step.
+
+    if (points_0.size()<8)
+    {
+        std::cout<<"At least 8 points are needed for recover fundamental matrix"<<std::endl;
+        return false;
+    }
+
+    if (points_0.size()!=points_1.size())
+    {
+        std::cout<<"Point number not equal for two images"<<std::endl;
+    }
+
+    /// Normalization
+    Vector3D sample_center_0(0, 0, 0);   ///c
+    Vector3D sample_center_1(0, 0, 0);
+    double avg_dist_0 = 0; ///d
+    double avg_dist_1 = 0;
+    double scale_fac_0, scale_fac_1;
+
+    for (int i = 0; i<points_0.size(); i++) {
+        sample_center_0 += points_0[i];
+        sample_center_1 += points_1[i];
+    }
+
+
+    for (int i = 0; i< points_0.size(); i++) {
+        double temp_dist_0 = distance(sample_center_0, points_0[i]);
+        double temp_dist_1 = distance(sample_center_1, points_1[i]);
+        avg_dist_0 += temp_dist_0;
+        avg_dist_1 += temp_dist_1;
+    }
+
+
+    scale_fac_0 = sqrt(2) / avg_dist_0; ///s
+    scale_fac_1 = sqrt(2) / avg_dist_1;
+    Matrix33 normalization_T_0 = (scale_fac_0, 0, -sample_center_0.x(),
+                                        0, scale_fac_0, -sample_center_0.y(),
+                                        0, 0, 1);
+    Matrix33 normalization_T_1 = (scale_fac_1, 0, -sample_center_1.x(),
+                                        0, scale_fac_1, -sample_center_1.y(),
+                                        0, 0, 1);
+
+    std::vector<Vector2D> normalized_points_0;
+    std::vector<Vector2D> normalized_points_1;
+
+    for (int i = 0; i< points_0.size(); i++) {
+        Vector2D temp_pt_0 = normalization_T_0 * (points_0[i]);
+        Vector2D temp_pt_1 = normalization_T_1 * (points_1[i]);
+        normalized_points_0.emplace_back(temp_pt_0);
+        normalized_points_1.emplace_back(temp_pt_1);
+    }
+
+    Matrix W(points_0.size(), 9);
+    for (int i = 0; i<points_0.size(); i++) {
+        double arr[] = {normalized_points_0[i].x() * normalized_points_1[i].x(), //u0 u1
+                          normalized_points_0[i].y() * normalized_points_1[i].x(), //v0 u1
+                          normalized_points_1[i].x(), //u1
+                          normalized_points_0[i].x() * normalized_points_1[i].y(), //u0 v1
+                          normalized_points_0[i].y() * normalized_points_1[i].y(), //v0 v1
+                          normalized_points_1[i].y(), //v1
+                          normalized_points_0[i].x(), //u0
+                          normalized_points_0[i].y(), //v0
+                          1
+                          };
+        Vector row_0(9, arr);
+        W.set_row(i, row_0);
+    }
+
+    Matrix U, D, V;
+    svd_decompose(W, U, D, V);
+    Vector f = V.get_column(8);
+
+    Matrix33 F_hat = (f[0], f[1], f[2],
+                    f[3], f[4], f[5],
+                    f[6], f[7], f[8]);
+
+
+    Matrix U_F, D_F, V_F;
+    svd_decompose(F_hat, U_F, D_F, V_F);
+    D_F.set_row(2, {0,0,0});
+    Matrix F = U_F * D_F *V_F;
+
     return points_3d.size() > 0;
 }

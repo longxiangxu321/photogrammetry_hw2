@@ -1,0 +1,11 @@
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: D:/Q4/photogrammetry/assignment2/A2_Triangulation/A2_Triangulation_Code/cmake-build-debug-visual-studio/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.2.4/bin/ninja/win/ninja.exe cmTC_116ec && [1/2] Building C object CMakeFiles\cmTC_116ec.dir\CheckIncludeFile.c.obj
+FAILED: CMakeFiles/cmTC_116ec.dir/CheckIncludeFile.c.obj 
+C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1433~1.316\bin\Hostx86\x86\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\cmTC_116ec.dir\CheckIncludeFile.c.obj /FdCMakeFiles\cmTC_116ec.dir\ /FS -c D:\Q4\photogrammetry\assignment2\A2_Triangulation\A2_Triangulation_Code\cmake-build-debug-visual-studio\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+D:\Q4\photogrammetry\assignment2\A2_Triangulation\A2_Triangulation_Code\cmake-build-debug-visual-studio\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory
+ninja: build stopped: subcommand failed.
+
+
+

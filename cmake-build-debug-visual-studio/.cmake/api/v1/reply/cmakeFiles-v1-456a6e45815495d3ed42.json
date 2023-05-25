@@ -1,0 +1,315 @@
+{
+	"inputs" : 
+	[
+		{
+			"path" : "CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-visual-studio/CMakeFiles/3.23.2/CMakeSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-visual-studio/CMakeFiles/3.23.2/CMakeCCompiler.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-visual-studio/CMakeFiles/3.23.2/CMakeCXXCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeGenericSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeCInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/MSVC-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-MSVC-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-MSVC.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-visual-studio/CMakeFiles/3.23.2/CMakeRCCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeRCInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeCXXInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/MSVC-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-MSVC-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-MSVC.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"path" : "3rd_party/CMakeLists.txt"
+		},
+		{
+			"path" : "3rd_party/glew/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindOpenGL.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"path" : "3rd_party/glfw/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/GNUInstallDirs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakeDependentOption.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindThreads.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CheckLibraryExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CheckCSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/Internal/CheckSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CMakePackageConfigHelpers.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/WriteBasicConfigVersionFile.cmake"
+		},
+		{
+			"path" : "3rd_party/glfw/src/glfw3Config.cmake.in"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/BasicConfigVersion-SameMajorVersion.cmake.in"
+		},
+		{
+			"path" : "3rd_party/glfw/src/glfw3.pc.in"
+		},
+		{
+			"path" : "3rd_party/glfw/src/CMakeLists.txt"
+		},
+		{
+			"path" : "3rd_party/glfw/src/glfw_config.h.in"
+		},
+		{
+			"path" : "3rd_party/glog/CMakeLists.txt"
+		},
+		{
+			"path" : "3rd_party/cminpack/CMakeLists.txt"
+		},
+		{
+			"path" : "3rd_party/cminpack/cmake/cminpack_utils.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CheckLibraryExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CheckFunctionExists.cmake"
+		},
+		{
+			"path" : "3rd_party/cminpack/cmake/CMakeLists.txt"
+		},
+		{
+			"path" : "3rd_party/cminpack/cmake/cminpack.pc.in"
+		},
+		{
+			"path" : "easy3d/CMakeLists.txt"
+		},
+		{
+			"path" : "easy3d/core/CMakeLists.txt"
+		},
+		{
+			"path" : "easy3d/fileio/CMakeLists.txt"
+		},
+		{
+			"path" : "easy3d/util/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindThreads.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CheckLibraryExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/CheckCSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/share/cmake-3.23/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"path" : "easy3d/viewer/CMakeLists.txt"
+		},
+		{
+			"path" : "easy3d/optimizer/CMakeLists.txt"
+		},
+		{
+			"path" : "Triangulation/CMakeLists.txt"
+		},
+		{
+			"path" : "Tutorial_NonlinearLeastSquares/CMakeLists.txt"
+		}
+	],
+	"kind" : "cmakeFiles",
+	"paths" : 
+	{
+		"build" : "D:/Q4/photogrammetry/assignment2/A2_Triangulation/A2_Triangulation_Code/cmake-build-debug-visual-studio",
+		"source" : "D:/Q4/photogrammetry/assignment2/A2_Triangulation/A2_Triangulation_Code"
+	},
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}
