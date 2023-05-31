@@ -111,7 +111,7 @@ bool get_fundamental_matrix(const unsigned long long &num_pairs,
     return true;
 }
 
-// input fundamental matrix and get the essential matrix
+// input fundamental matrix and get the relative poses
 bool get_relative_poses(const unsigned long long &num_pairs,
                         const std::vector<Vector2D> &points_0,
                         const std::vector<Vector2D> &points_1,
